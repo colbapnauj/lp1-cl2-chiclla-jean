@@ -12,17 +12,12 @@
 	<%@ include file="snippet/nav_main.jsp" %>
 	
 	<div class="container">
-		<a href="/ProyectoImplementacion/EstudianteServlet2">CRUD Estudiantes</a>
+		<a href="/TiendaVirtual/ProductoServlet">Tienda Virtual</a>
 	</div>
 	
-	<footer>
-		<hr />
-		<section>
+	
 		
-			<div class="container">
-				<span>Jean Chiclla</span>
-			</div>
-		</section>
-	</footer>
+	<%@ include file="snippet/footer.jsp" %>
+	
 </body>
 </html>

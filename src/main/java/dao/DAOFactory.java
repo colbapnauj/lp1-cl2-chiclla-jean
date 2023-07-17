@@ -1,11 +1,8 @@
 package dao;
 
-import db.MySqlDAOFactory;
-import interfaces.AuthInterface;
-import interfaces.EstudianteInterface;
-import interfaces.ProfesoresInterface;
-import interfaces.SessionInterface;
-import interfaces.SubjectInterface;
+import interfaces.ProductoInterface;
+import interfaces.CalificacionInterface;
+import interfaces.ClienteInterface;
 
 public abstract class DAOFactory {
 	
@@ -13,11 +10,9 @@ public abstract class DAOFactory {
 	public static final int SQLSERVER = 2;
 	public static final int ORACLE = 3;
 	
-	public abstract SubjectInterface getSubject();
-	public abstract ProfesoresInterface getProfesores();
-	public abstract EstudianteInterface getEstudiante();
-	public abstract AuthInterface getAuth();
-	public abstract SessionInterface getSession();
+	public abstract ProductoInterface getProducto();
+	public abstract CalificacionInterface getCalificacion();
+	public abstract ClienteInterface getCliente();
 	
 	public static DAOFactory getDaoFactory(int tipo) {
 		
@@ -31,9 +26,6 @@ public abstract class DAOFactory {
 			return null;
 		default:
 			return null;
-		}
-		
-		
-	}
-			
+		}	
+	}	
 }
